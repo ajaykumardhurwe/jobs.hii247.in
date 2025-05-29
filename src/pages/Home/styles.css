@@ -1,0 +1,128 @@
+/* 🌌 Universe Star and Technology Theme */
+
+/* 🌠 Background - Galaxy Gradient Animation */
+@keyframes galaxyAnimation {
+    0%, 100% { background: radial-gradient(circle, #0d0d2b, #040014); }
+    25% { background: radial-gradient(circle, #12003b, #020010); }
+    50% { background: radial-gradient(circle, #1b003f, #070021); }
+    75% { background: radial-gradient(circle, #2d0057, #12002e); }
+}
+
+.animated-bg {
+    animation: galaxyAnimation 10s infinite alternate;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✨ Twinkling Stars Animation */
+@keyframes twinklingStars {
+    0% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0.2; transform: scale(1); }
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinklingStars 3s infinite linear;
+}
+
+.star1 { top: 10%; left: 15%; animation-delay: 0s; }
+star2 { top: 20%; left: 80%; animation-delay: 1s; }
+.star3 { top: 50%; left: 40%; animation-delay: 2s; }
+.star4 { top: 70%; left: 60%; animation-delay: 3s; }
+.star5 { top: 90%; left: 30%; animation-delay: 4s; }
+
+/* 💫 Shooting Stars Animation */
+@keyframes shootingStar {
+    0% { opacity: 0; transform: translateX(0) translateY(0); }
+    50% { opacity: 1; transform: translateX(50px) translateY(-50px); }
+    100% { opacity: 0; transform: translateX(100px) translateY(-100px); }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: shootingStar 3s infinite linear;
+}
+
+.shooting1 { top: 5%; left: 90%; animation-delay: 0.5s; }
+.shooting2 { top: 30%; left: 10%; animation-delay: 1.5s; }
+.shooting3 { top: 60%; left: 50%; animation-delay: 2.5s; }
+
+/* 🔷 Futuristic Glowing Button */
+.button {
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(45deg, #0ff, #00f);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #00f, #0ff);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+}
+
+/* 📡 Floating Tech Symbols */
+@keyframes floatIcons {
+    0% { transform: translateY(0px); opacity: 1; }
+    50% { transform: translateY(-10px); opacity: 0.8; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+.tech-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: #00ffff;
+    animation: floatIcons 3s infinite ease-in-out alternate;
+}
+
+.tech1 { top: 15%; left: 5%; animation-delay: 0s; }
+.tech2 { top: 40%; left: 80%; animation-delay: 1s; }
+.tech3 { top: 70%; left: 50%; animation-delay: 2s; }
+
+/* 🛰️ Rotating Tech Rings */
+@keyframes rotateRings {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.tech-ring {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #00ffff;
+    border-radius: 50%;
+    animation: rotateRings 5s infinite linear;
+}
+
+.ring1 { top: 10%; left: 20%; animation-delay: 0s; }
+.ring2 { top: 60%; left: 70%; animation-delay: 1s; }
+
+/* 🌟 Glowing Text Effect */
+.glow-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* 🖼️ Image Hover Effect */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
